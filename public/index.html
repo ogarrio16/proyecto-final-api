@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Weather App</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background:#f7f9fc; color:#222; }
+    .container{ max-width:600px; margin:0 auto; background:#fff; padding:1.5rem; border-radius:8px; box-shadow:0 6px 18px rgba(0,0,0,.06) }
+    input, button{ padding:.6rem; font-size:1rem; }
+    .row{ display:flex; gap:.5rem; margin-bottom:1rem; }
+    .result{ margin-top:1rem; background:#f2f6fb;padding:1rem;border-radius:6px; }
+    .error{ color:#b00020; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Weather Checker</h1>
+    <p>Type a city (optionally "city,country") and press Search.</p>
+    <div class="row">
+      <input id="address" placeholder="e.g., London or Paris,FR" style="flex:1" />
+      <button id="search">Search</button>
+    </div>
+
+    <div id="message"></div>
+    <div id="output" class="result" style="display:none"></div>
+  </div>
+
+  <script src="/app.js"></script>
+</body>
+</html>
